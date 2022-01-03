@@ -20,6 +20,10 @@ script:
 - mvn javadoc:javadoc
 - cd ..
 - cd coreserver
+- mvn install:install-file -Dfile=./lib/XBJL-1.1.0/xbjlib-1.1.0.jar -DgroupId=xbj -DartifactId=xbj -Dversion=1.1.0 -Dpackaging=jar -DgeneratePom=true
+- mvn install:install-file -Dfile=./lib/XBJL-1.1.0/extra-libs/rxtx-2.2.jar -DgroupId=rxtx -DartifactId=rxtx -Dversion=2.2.0 -Dpackaging=jar -DgeneratePom=true
+- mvn install:install-file -Dfile=./lib/XBJL-1.1.0/extra-libs/slf4j-api-1.7.12.jar -DgroupId=slf4j-api -DartifactId=slf4j-api -Dversion=1.7.12 -Dpackaging=jar -DgeneratePom=true
+- mvn install:install-file -Dfile=./lib/XBJL-1.1.0/extra-libs/slf4j-nop-1.7.12.jar -DgroupId=slf4j-nop -DartifactId=slf4j-nop -Dversion=1.7.12 -Dpackaging=jar -DgeneratePom=true
 - mvn test
 - mvn compile
 - mvn javadoc:javadoc

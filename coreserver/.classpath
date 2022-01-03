@@ -19,6 +19,13 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="lib/XBJL-1.1.0/xbjlib-1.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/XBJL-1.1.0/xbjlib-1.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/XBJL-1.1.0/extra-libs/rxtx-2.2.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="coreserver/lib/XBJL-1.1.0/extra-libs/native/Mac_OS_X"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="lib/XBJL-1.1.0/extra-libs/slf4j-api-1.7.12.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/XBJL-1.1.0/extra-libs/slf4j-nop-1.7.12.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
